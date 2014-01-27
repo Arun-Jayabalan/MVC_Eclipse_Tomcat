@@ -1,14 +1,13 @@
 package com.arun.tutorial.mvc.controllers;
 
-import java.io.IOException;
+import com.arun.tutorial.mvc.model.PersonModel;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.arun.tutorial.mvc.model.PersonModel;
+import java.io.IOException;
 
 
 @WebServlet("/ServletController")
