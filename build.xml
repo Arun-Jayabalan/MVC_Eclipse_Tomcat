@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="mvcProj1" >
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath">
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/annotations-api.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ant.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ha.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-tribes.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/ecj-4.3.1.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/el-api.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper-el.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/jsp-api.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/servlet-api.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-api.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-util.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat7-websocket.jar"/>
+        <pathelement location="../../Tomcat_7.0/apache-tomcat-7.0.50/lib/websocket-api.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+    </path>
+    <path id="mvcProj1.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="clean,build-subprojects,build-project,PersonModelTest.test" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="mvcProj1.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="PersonModelTest.test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" haltonfailure="true" haltonerror="true" >
+            <formatter type="xml"/>
+            <test name="com.arun.tutorial.test.PersonModelTest" todir="${junit.output.dir}"/>
+            <classpath refid="mvcProj1.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

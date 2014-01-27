@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="euajayabal" name="com.arun.tutorial.test.PersonModelTest" skipped="0" tests="1" time="0.055" timestamp="2014-01-26T20:47:43">
+  <properties>
+    <property name="java.vendor" value="Apple Inc." />
+    <property name="env.JENKINS_SERVER_COOKIE" value="9f16ec534b768d3d" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.SECURITYSESSIONID" value="186a3" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="env.TMPDIR" value="/var/folders/yc/q4z6dqcn48gf_cvgz25lqxxm00007h/T/" />
+    <property name="env.PWD" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.9.3/libexec" />
+    <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+    <property name="env.BUILD_DISPLAY_NAME" value="#23" />
+    <property name="env.JAVA_MAIN_CLASS_4697" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="user.name" value="jenkins" />
+    <property name="env.USER" value="jenkins" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0xF0:0:0" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="env.JAVA_MAIN_CLASS_83" value="Main" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="mvcProj1" />
+    <property name="java.version" value="1.6.0_65" />
+    <property name="user.timezone" value="" />
+    <property name="env.NODE_NAME" value="master" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="ECLIPSE_HOME" value="../../eclipse/eclipse" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="env.BUILD_NUMBER" value="23" />
+    <property name="ant.file.type.mvcProj1" value="file" />
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="jenkins" />
+    <property name="ant.file" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1/build.xml" />
+    <property name="os.version" value="10.9.1" />
+    <property name="env.HUDSON_COOKIE" value="378f2a91-e982-484b-a9a6-784facda6b17" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="20.65-b04-462" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.3/libexec/lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JOB_NAME" value="MyFirst MVC" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="env.HUDSON_URL" value="http://localhost:8080/" />
+    <property name="env.BUILD_TAG" value="jenkins-MyFirst MVC-23" />
+    <property name="user.home" value="/Users/Shared/Jenkins" />
+    <property name="target" value="1.6" />
+    <property name="env.JENKINS_HOME" value="/Users/Shared/Jenkins/Home" />
+    <property name="env.JOB_URL" value="http://localhost:8080/job/MyFirst%20MVC/" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="java.vendor.url" value="http://www.apple.com/" />
+    <property name="env.HUDSON_HOME" value="/Users/Shared/Jenkins/Home" />
+    <property name="env.HUDSON_SERVER_COOKIE" value="9f16ec534b768d3d" />
+    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on December 23 2013" />
+    <property name="java.class.path" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1/build/classes:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/annotations-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ant.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ha.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-tribes.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/ecj-4.3.1.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/el-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper-el.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jsp-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/servlet-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-coyote.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-dbcp.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-es.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-fr.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-ja.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-jdbc.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-util.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat7-websocket.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/websocket-api.jar:/Users/ajayabal/playground/eclipse/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar:/Users/ajayabal/playground/eclipse/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.arun.tutorial.test.PersonModelTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ajayabal/playground/eclipseWorkspace/mvcProj1/junit/TEST-com.arun.tutorial.test.PersonModelTest.xml crashfile=/Users/ajayabal/playground/eclipseWorkspace/mvcProj1/junitvmwatcher7643193956985852765.properties propsfile=/Users/ajayabal/playground/eclipseWorkspace/mvcProj1/junit7471564323720515465.properties" />
+    <property name="env.EXECUTOR_NUMBER" value="1" />
+    <property name="env.com.apple.java.jvmMode" value="client" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.HOME" value="/Users/Shared/Jenkins" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="java.io.tmpdir" value="/var/folders/yc/q4z6dqcn48gf_cvgz25lqxxm00007h/T/" />
+    <property name="env.BUILD_URL" value="http://localhost:8080/job/MyFirst%20MVC/23/" />
+    <property name="ant.file.mvcProj1" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1/build.xml" />
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+    <property name="mrj.build" value="11M4609" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+    <property name="mrj.version" value="1070.1.6.0_65-462" />
+    <property name="env.com.apple.java.jvmTask" value="CommandLine.java.java.java" />
+    <property name="env.BUILD_ID" value="2014-01-26_20-47-41" />
+    <property name="user.dir" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1" />
+    <property name="env.JAVA_ARCH" value="x86_64" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.JENKINS_URL" value="http://localhost:8080/" />
+    <property name="basedir" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.3/libexec/lib/ant.jar" />
+    <property name="source" value="1.6" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="env.WORKSPACE" value="/Users/ajayabal/playground/eclipseWorkspace/mvcProj1" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="build" />
+    <property name="env.NODE_LABELS" value="master" />
+  </properties>
+  <testcase classname="com.arun.tutorial.test.PersonModelTest" name="test" time="0.0060">
+    <failure message="expected:&lt;[Arun[]]&gt; but was:&lt;[Arun[1]]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[Arun[]]&gt; but was:&lt;[Arun[1]]&gt;
+	at com.arun.tutorial.test.PersonModelTest.test(PersonModelTest.java:40)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
