@@ -15,9 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
-    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
-    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="module-library" exported="">
       <library name="mockito-core-1.9.5.jar">
         <CLASSES>
@@ -27,8 +25,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="module-library">
+    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/javax.servlet-3.0.0.v201112011016.jar!/" />
