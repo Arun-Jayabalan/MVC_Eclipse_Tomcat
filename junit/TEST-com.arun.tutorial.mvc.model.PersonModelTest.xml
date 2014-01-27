@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="euajayabal" name="com.arun.tutorial.mvc.model.PersonModelTest" skipped="0" tests="1" time="0.052" timestamp="2014-01-27T16:00:59">
+  <properties>
+    <property name="java.vendor" value="Apple Inc." />
+    <property name="env.__CHECKFIX1436934" value="1" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.GEM_HOME" value="/Users/ajayabal/.rvm/gems/ruby-1.9.3-p286" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="env.TMPDIR" value="/var/folders/tm/hkspwvn51c58fyc47g2jl5jx_k2b6v/T/" />
+    <property name="env.rvm_warn_clr" value="[33m" />
+    <property name="env.PWD" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat" />
+    <property name="env.LANG" value="en_GB.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.9.3/libexec" />
+    <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609" />
+    <property name="env.MY_RUBY_HOME" value="/Users/ajayabal/.rvm/rubies/ruby-1.9.3-p286" />
+    <property name="env.OS_TENANT_NAME" value="arobinso" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-1PF8Di/Render" />
+    <property name="env.rvm_version" value="1.19.6 (latest)" />
+    <property name="user.name" value="ajayabal" />
+    <property name="env.escape_flag" value="1" />
+    <property name="env.USER" value="ajayabal" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x55212CDB:0:0" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="env.PERLBREW_ROOT" value="/Users/ajayabal/perl5/perlbrew" />
+    <property name="env.PERLBREW_BASHRC_VERSION" value="0.67" />
+    <property name="env.PATH" value="/Users/ajayabal/perl5/perlbrew/bin:/usr/local/heroku/bin:/Users/ajayabal/.rvm/gems/ruby-1.9.3-p286/bin:/Users/ajayabal/.rvm/gems/ruby-1.9.3-p286@global/bin:/Users/ajayabal/.rvm/rubies/ruby-1.9.3-p286/bin:/Users/ajayabal/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:./:/usr/local/bin/ant:/Applications/Vagrant/bin/:/usr/local/Cellar/android-sdk/r21.0.1:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/Users/ajayabal/.rvm/bin" />
+    <property name="env.rvm_debug_clr" value="[35m" />
+    <property name="user.language" value="en" />
+    <property name="env.rvm_prefix" value="/Users/ajayabal" />
+    <property name="env.rvm_notify_clr" value="[32m" />
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="env.MYSQL_HOME" value="/usr/local/mysql" />
+    <property name="ant.file.MVC_Eclipse_Tomcat" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/build.xml" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="MVC_Eclipse_Tomcat" />
+    <property name="env.rvm_path" value="/Users/ajayabal/.rvm" />
+    <property name="env.RUBY_VERSION" value="ruby-1.9.3-p286" />
+    <property name="java.version" value="1.6.0_65" />
+    <property name="user.timezone" value="" />
+    <property name="env.OS_AUTH_URL" value="https://identity.api.rackspacecloud.com/v2.0/" />
+    <property name="env._first" value="0" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="env.rvm_bin_path" value="/Users/ajayabal/.rvm/bin" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="ECLIPSE_HOME" value="../../../playground/eclipse/eclipse" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.PERLBREW_HOME" value="/Users/ajayabal/.perlbrew" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="env.ANDROID_HOME" value="/usr/local/Cellar/android-sdk/r21.1" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="ajayabal" />
+    <property name="ant.file" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/build.xml" />
+    <property name="os.version" value="10.9.1" />
+    <property name="env.ANDROID_SDK_ROOT" value="/usr/local/opt/android-sdk" />
+    <property name="env.TERM_PROGRAM_VERSION" value="326" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="20.65-b04-462" />
+    <property name="env._second" value="1" />
+    <property name="ant.file.type.MVC_Eclipse_Tomcat" value="file" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.3/libexec/lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.IRBRC" value="/Users/ajayabal/.rvm/rubies/ruby-1.9.3-p286/.irbrc" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.MANPATH" value="/Users/ajayabal/.rvm/rubies/ruby-1.9.3-p286/share/man:/Users/ajayabal/.rvm/man:/usr/share/man:/usr/local/share/man:/usr/local/mysql/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.OS_NO_CACHE" value="1" />
+    <property name="env.NOVA_RAX_AUTH" value="1" />
+    <property name="env.GEM_PATH" value="/Users/ajayabal/.rvm/gems/ruby-1.9.3-p286:/Users/ajayabal/.rvm/gems/ruby-1.9.3-p286@global" />
+    <property name="user.home" value="/Users/ajayabal" />
+    <property name="target" value="1.6" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="java.vendor.url" value="http://www.apple.com/" />
+    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on December 23 2013" />
+    <property name="java.class.path" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/build/classes:/Users/ajayabal/Music/mockito-core-1.9.5.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/annotations-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ant.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ha.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-tribes.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/ecj-4.3.1.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/el-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper-el.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jsp-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/servlet-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-coyote.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-dbcp.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-es.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-fr.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-ja.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-jdbc.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-util.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat7-websocket.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/websocket-api.jar:/Users/ajayabal/playground/eclipse/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar:/Users/ajayabal/playground/eclipse/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.arun.tutorial.mvc.model.PersonModelTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junit/TEST-com.arun.tutorial.mvc.model.PersonModelTest.xml crashfile=/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junitvmwatcher228621344199982101.properties propsfile=/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junit316423657477228276.properties" />
+    <property name="env.TERM_SESSION_ID" value="5C6F6F46-B1FF-4D64-96D8-82D6C2AF0814" />
+    <property name="env.com.apple.java.jvmMode" value="client" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.JAVA_MAIN_CLASS_7662" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/Users/ajayabal" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.OS_REGION_NAME" value="ORD" />
+    <property name="java.io.tmpdir" value="/var/folders/tm/hkspwvn51c58fyc47g2jl5jx_k2b6v/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+    <property name="env.OS_PASSWORD" value="ffb94e1fe02b0a7e069b98dfe6c540ed" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-rzUxtq/Listeners" />
+    <property name="mrj.build" value="11M4609" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
+    <property name="env.__array_start" value="0" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+    <property name="env.com.apple.java.jvmTask" value="CommandLine_Manual.java" />
+    <property name="user.dir" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat" />
+    <property name="mrj.version" value="1070.1.6.0_65-462" />
+    <property name="env.rvm_reset_clr" value="(B[m" />
+    <property name="env.OS_USERNAME" value="rackcloud0081" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.3/libexec/lib/ant.jar" />
+    <property name="source" value="1.6" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="env.OS_AUTH_SYSTEM" value="rackspace" />
+    <property name="env.rvm_error_clr" value="[31m" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="build" />
+  </properties>
+  <testcase classname="com.arun.tutorial.mvc.model.PersonModelTest" name="test" time="0.0020" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
