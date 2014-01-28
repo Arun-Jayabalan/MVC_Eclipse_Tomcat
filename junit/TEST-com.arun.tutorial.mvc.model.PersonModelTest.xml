@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="euajayabal" name="com.arun.tutorial.mvc.model.PersonModelTest" skipped="0" tests="1" time="0.052" timestamp="2014-01-27T16:00:59">
+<testsuite errors="0" failures="0" hostname="euajayabal" name="com.arun.tutorial.mvc.model.PersonModelTest" skipped="0" tests="1" time="0.068" timestamp="2014-01-28T10:46:33">
   <properties>
     <property name="java.vendor" value="Apple Inc." />
     <property name="env.__CHECKFIX1436934" value="1" />
@@ -56,6 +56,7 @@
     <property name="file.separator" value="/" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="env.PERLBREW_HOME" value="/Users/ajayabal/.perlbrew" />
+    <property name="env.JAVA_MAIN_CLASS_11914" value="org.apache.tools.ant.launch.Launcher" />
     <property name="java.class.version" value="50.0" />
     <property name="user.country" value="US" />
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
@@ -94,13 +95,12 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.3 compiled on December 23 2013" />
     <property name="java.class.path" value="/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/build/classes:/Users/ajayabal/Music/mockito-core-1.9.5.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/annotations-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ant.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ha.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-tribes.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/ecj-4.3.1.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/el-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper-el.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jasper.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/jsp-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/servlet-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-api.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-coyote.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-dbcp.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-es.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-fr.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-i18n-ja.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-jdbc.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat-util.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/tomcat7-websocket.jar:/Users/ajayabal/playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/websocket-api.jar:/Users/ajayabal/playground/eclipse/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar:/Users/ajayabal/playground/eclipse/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.3/libexec/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.arun.tutorial.mvc.model.PersonModelTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junit/TEST-com.arun.tutorial.mvc.model.PersonModelTest.xml crashfile=/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junitvmwatcher228621344199982101.properties propsfile=/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junit316423657477228276.properties" />
-    <property name="env.TERM_SESSION_ID" value="5C6F6F46-B1FF-4D64-96D8-82D6C2AF0814" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.arun.tutorial.mvc.model.PersonModelTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junit/TEST-com.arun.tutorial.mvc.model.PersonModelTest.xml crashfile=/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junitvmwatcher4758490344788244020.properties propsfile=/Users/ajayabal/github/eclipseWorkspace/MVC_Eclipse_Tomcat/junit5675148119040222343.properties" />
+    <property name="env.TERM_SESSION_ID" value="F35C8E13-B21A-454F-A0C4-4A8980BCA948" />
     <property name="env.com.apple.java.jvmMode" value="client" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
     <property name="java.vm.specification.version" value="1.0" />
-    <property name="env.JAVA_MAIN_CLASS_7662" value="org.apache.tools.ant.launch.Launcher" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="unknown" />
     <property name="env.HOME" value="/Users/ajayabal" />
@@ -132,7 +132,7 @@
     <property name="java.specification.version" value="1.6" />
     <property name="ant.project.invoked-targets" value="build" />
   </properties>
-  <testcase classname="com.arun.tutorial.mvc.model.PersonModelTest" name="test" time="0.0020" />
+  <testcase classname="com.arun.tutorial.mvc.model.PersonModelTest" name="test" time="0.0010" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
