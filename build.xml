@@ -46,6 +46,7 @@
         <path refid="EAR Libraries.libraryclasspath"/>
         <pathelement location="lib/mockito-core-1.9.5.jar"/>
         <pathelement location="lib/javax.servlet-3.0.0.v201112011016.jar"/>
+        <pathelement location="lib/junit-4.11.jar"/>
         <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath"/>
         <path refid="JUnit 4.libraryclasspath"/>
     </path>
