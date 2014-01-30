@@ -1,7 +1,13 @@
 package com.arun.tutorial.mvc.controllers;
 
-import static org.junit.Assert.assertEquals;
+import com.arun.tutorial.mvc.model.PersonModel;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
+import javax.servlet.*;
+import javax.servlet.http.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,30 +18,8 @@ import java.util.Enumeration;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.servlet.AsyncContext;
-import javax.servlet.DispatcherType;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletInputStream;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import javax.servlet.http.Part;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito.*;
-
-import org.mockito.runners.MockitoJUnitRunner;
-
-import com.arun.tutorial.mvc.controllers.ServletController;
-import com.arun.tutorial.mvc.model.PersonModel;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ServletControllerTest {
@@ -44,23 +28,25 @@ public class ServletControllerTest {
 	private PersonModel testPerson = null;
 	private String jspName;
 	@Mock
-	private RequestDispatcher requestDispaatcher;
+	private RequestDispatcher requestDispatcher;
+    @Mock
+    private ServletContext servletContext;
 	
 	@Test
-	public void shouldAddNewPersonModelToRequestWithParametersFromRequestAndForwardToViewJsp() throws ServletException, IOException{
+	public void shousetAttributeldAddNewPersonModelToRequestWithParametersFromRequestAndForwardToViewJsp() throws ServletException, IOException{
 		HttpServletRequest stubRequest = new StubkHttpServletRequest();
 		HttpServletResponse stubResponse = new StubHttpServletResponse();
-		
+
 //		HttpServletResponse response  = mock(HttpServeltResponse.class);
 //		when(request.getParameter("name")).thenReturn("Arun");
 //		when(request.getParameter("mail")).thenReturn("Arun@gmail.com");
-		
+		//stubRequest.setAttribute("person",testPerson);
 		servletController.doPost(stubRequest, stubResponse);
 		
 		assertEquals(testPerson.getName(),"[Arun]");
 		assertEquals(testPerson.getMail(),"[a@a.com]");
 		assertEquals(jspName,"/jspView.jsp");
-		//verify(requestDispaatcher).forward(stubRequest, stubResponse);
+        verify(requestDispatcher).forward(stubRequest, stubResponse);
 	}
 	
 	@Test
@@ -71,7 +57,7 @@ public class ServletControllerTest {
 		servletController.doGet(stubRequest, stubResponse);	
 		
 		assertEquals(jspName,"/jspInitial.jsp");
-		//verify(requestDispaatcher).forward(stubRequest, stubResponse);
+        verify(requestDispatcher).forward(stubRequest, stubResponse);
 	}
 	
 	private class StubHttpServletResponse implements HttpServletResponse {
@@ -436,7 +422,7 @@ public class ServletControllerTest {
 		@Override
 		public RequestDispatcher getRequestDispatcher(String arg0) {
 			jspName = arg0;
-			return requestDispaatcher;
+			return requestDispatcher;
 		}
 
 		@Override
@@ -460,7 +446,7 @@ public class ServletControllerTest {
 		@Override
 		public ServletContext getServletContext() {
 			// TODO Auto-generated method stub
-			return null;
+			return servletContext;
 		}
 
 		@Override

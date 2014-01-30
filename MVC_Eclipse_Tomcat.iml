@@ -20,15 +20,6 @@
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="library" name="javax.servlet-3.0.0.v201112011016" level="project" />
     <orderEntry type="library" name="mockito-core-1.9.5.jar" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/junit-4.11.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>
 
