@@ -7,10 +7,10 @@
 <title>There is No name and Email</title>
 </head>
 <body>
-Please provide the name and eMail .....
+Please provide your name and eMail .....
 <form action="ServletController" method="POST">
 	<label>Name</label><input name="name"></input>
-	<label>Mail</label><input name="mail"></input>
+	<label>eMail</label><input name="mail"></input>
 	<button type="submit">Submit</button>
 </form>
 </body>

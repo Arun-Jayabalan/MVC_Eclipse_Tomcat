@@ -6,6 +6,7 @@
               as the first entry and export the buildfile again. -->
 <project basedir="." default="build" name="MVC_Eclipse_Tomcat">
     <property environment="env"/>
+    <property file="build.properties"/>
     <property name="ECLIPSE_HOME" value="../../../playground/eclipse/eclipse"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
@@ -13,7 +14,7 @@
     <property name="source" value="1.6"/>
     <path id="Web App Libraries.libraryclasspath"/>
     <path id="EAR Libraries.libraryclasspath"/>
-    <path id="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath">
+    <path id="Apache.libraryclasspath">
         <pathelement location="../../../playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/annotations-api.jar"/>
         <pathelement location="../../../playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ant.jar"/>
         <pathelement location="../../../playground/Tomcat_7.0/apache-tomcat-7.0.50/lib/catalina-ha.jar"/>
@@ -47,7 +48,7 @@
         <pathelement location="lib/mockito-all-1.9.5.jar"/>
         <pathelement location="lib/javax.servlet-3.0.0.v201112011016.jar"/>
         <pathelement location="lib/junit-4.11.jar"/>
-        <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath"/>
+        <path refid="Apache.libraryclasspath"/>
         <path refid="JUnit 4.libraryclasspath"/>
     </path>
     <target name="init">
@@ -80,6 +81,7 @@
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <!--
     <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
         <copy todir="${ant.library.dir}">
             <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
@@ -89,6 +91,7 @@
             <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
         </unzip>
     </target>
+    -->
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
@@ -109,4 +112,39 @@
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
     </target>
+    <target name="deploy" depends="build-project">
+        <mkdir dir="dist"/>
+        <war destfile="dist/MyMVC.war" webxml="WebContent/WEB-INF/web.xml">
+            <fileset dir="WebContent"/>
+            <lib dir="WebContent/WEB-INF/lib"/>
+            <classes dir="build/classes"/>
+        </war>
+        <copy todir="${deploy.path}" preservelastmodified="true">
+            <fileset dir="dist">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+  <!--
+    <taskdef resource="org/apache/catalina/ant/catalina.tasks" classpathref="Apache.libraryclasspath" />
+
+
+    <target name="tomcat.undeploy" >
+        <undeploy url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" path="${deploy.path}"/>
+    </target>
+
+    <target name="tomcat.deploy" >
+        <deploy url="${deploy.url}" username="${deploy.user}" password="${deploy.pass}" path="${deploy.path}" war="file:${deploy.war}"/>
+    </target>
+
+    <target name="tomcat.start" >
+        <start url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" path="${deploy.path}"/>
+    </target>
+
+    <target name="tomcat.stop" >
+        <stop url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" path="${deploy.path}"/>
+    </target>
+
+   -->
+
 </project>
